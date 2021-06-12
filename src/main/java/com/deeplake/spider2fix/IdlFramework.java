@@ -29,7 +29,7 @@ import static com.deeplake.spider2fix.init.RegistryHandler.initRegistries;
 public class IdlFramework {
     public static final String MODID = "spider2fix";
     public static final String NAME = "Spider 2.0 fix";
-    public static final String VERSION = "0.1.101";
+    public static final String VERSION = "1.1";
 
     public static Logger logger;
 
