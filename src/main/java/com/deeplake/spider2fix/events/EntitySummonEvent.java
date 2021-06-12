@@ -27,9 +27,8 @@ public class EntitySummonEvent {
     @SubscribeEvent
     public static void onSummon(EntityJoinWorldEvent event) {
         if (event.getWorld().isRemote) {
-            IdlFramework.LogWarning(event.toString());
             Entity entity = event.getEntity();
-            if (entity.serverPosX == 0 && entity.serverPosY == 0 && entity.serverPosZ == 0)
+            if (!(entity instanceof EntityPlayer) && entity.serverPosX == 0 && entity.serverPosY == 0 && entity.serverPosZ == 0)
             {
                 event.getEntity().setDead();
                 //event.setCanceled(true);

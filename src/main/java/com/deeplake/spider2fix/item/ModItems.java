@@ -11,7 +11,7 @@ public class ModItems {
 
 	//Basic
 	//public static final Item PAPER_BLOOD = new ItemBase("paper_blood");
-	public static final Item PAPER_BLOOD = new ItemSummonSP("paper_blood");
+	//public static final Item PAPER_BLOOD = new ItemSummonSP("paper_blood");
 
 
 
