@@ -1,8 +1,8 @@
 [
 {
-  "modid": "untitled",
-  "name": "Idealland Framework",
-  "description": "A modding framework presented by Idealland.",
+  "modid": "spider2fix",
+  "name": "Spider 2.0 Fix",
+  "description": "Fix all those entity spawn at remote world.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://www.mcmod.cn/class/2421.html",

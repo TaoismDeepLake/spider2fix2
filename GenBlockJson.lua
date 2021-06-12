@@ -1,5 +1,5 @@
 local outFile = nil;
-local modName = "idlframewok";
+local modName = "spider2fix";
 local blockName = "grid_normal";
 
 local function GenModelBlockItem()
