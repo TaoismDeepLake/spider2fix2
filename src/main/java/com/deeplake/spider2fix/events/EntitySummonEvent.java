@@ -26,17 +26,13 @@ import static com.deeplake.spider2fix.util.NBTStrDef.IDLNBTDef.STARTER_KIT_VERSI
 public class EntitySummonEvent {
     @SubscribeEvent
     public static void onSummon(EntityJoinWorldEvent event) {
-        if (event.getEntity() instanceof EntitySheep || event.getEntity() instanceof EntityCow) {
-            if (event.getWorld().isRemote) {
-                IdlFramework.LogWarning(event.toString());
-                Entity entity = event.getEntity();
-                if (entity.serverPosX == 0 && entity.serverPosY == 0 && entity.serverPosZ == 0)
-                {
-                    event.getEntity().setDead();
-                    //event.setCanceled(true);
-                }
-            } else {
-
+        if (event.getWorld().isRemote) {
+            IdlFramework.LogWarning(event.toString());
+            Entity entity = event.getEntity();
+            if (entity.serverPosX == 0 && entity.serverPosY == 0 && entity.serverPosZ == 0)
+            {
+                event.getEntity().setDead();
+                //event.setCanceled(true);
             }
         }
     }
